@@ -217,3 +217,64 @@ header.sticky nav ul li a:hover {
     padding: 80px 0;
     background-color: #f9f9f9;
     text-align: center;
+}
+/* CSS for Contact Us section */
+.contact-us {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    margin-bottom: 40px;
+  }
+  
+  .contact-us p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-us label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .contact-us input,
+  .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-us button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fe0391;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-us button:hover {
+    background-color: #ff6f61;
+  }
+  
+  /* CSS for adjusting Featured Products for smaller screens */
+  @media screen and (max-width: 768px) {
+    .featured-products .product-card {
+      width: calc(100% - 20px);
+    }
+  }
+  
