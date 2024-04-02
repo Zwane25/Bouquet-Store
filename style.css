@@ -1,0 +1,219 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px; /* Increase container width for larger screens */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img.logo {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+    z-index: 999; /* Ensure the navbar stays on top */
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fe0391;
+    color: #fff;
+}
+
+/* Adjust content padding to accommodate the fixed navbar */
+.container {
+    padding-top: 60px; /* Adjust according to the navbar height */
+}
+
+/* Sticky Navigation */
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust navigation styles when scrolling */
+header.sticky nav ul li a {
+    color: #333;
+}
+
+header.sticky nav ul li a:hover {
+    background-color: #fe0391;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fe0391;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #fe0391;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fe0391;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff6f61;
+}
+
+.featured-products {
+    padding: 80px 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px); /* Set width for each product card */
+    display: inline-block; /* Display product cards inline */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fe0391;
+}
+
+.product-card button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fe0391;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #ff6f61;
+}
+
+.about-us {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center; /* Center align text */
+}
+
+.about-us h2 {
+    margin-bottom: 40px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px; /* Increase margin bottom for better spacing */
+}
+
+.about-us .btn {
+    background-color: #fe0391;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about-us .btn:hover {
+    background-color: #ff6f61;
+}
+
+.testimonials {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
